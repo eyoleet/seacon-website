@@ -9,10 +9,24 @@
     >
     <title>Seacon Ltd | Luxury spaces, built with care</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
   </head>
   <body>
+    <div class="site-intro" data-site-intro aria-hidden="true">
+      <img class="site-intro-bg" src="assets/images/intro-door-closed.png" alt="">
+      <div class="site-intro-brand" aria-hidden="true">
+        <img src="assets/logo/seacon-logo-white - Copy.png" alt="">
+        <p>
+          <span>Construction</span>
+          <span>|</span>
+          <span>Refurbishment</span>
+          <span>|</span>
+          <span>Aftercare</span>
+        </p>
+      </div>
+    </div>
     <header class="site-header">
-      <a class="brand" href="#" aria-label="Seacon Ltd home">
+      <a class="brand" href="index.html" aria-label="Seacon Ltd home">
         <img src="assets/logo/seacon-logo.png" alt="Seacon Ltd">
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -22,10 +36,10 @@
         <span class="sr-only">Menu</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -33,27 +47,30 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Construction | Refurbishment | Aftercare</p>
-          <h1 id="hero-title">Luxury spaces, built with care</h1>
+          <h1 id="hero-title">Luxury spaces, <br> built with care.</h1>
           <div class="rule"></div>
           <p>
             A construction company specialising in complex refurbishment projects
             that demand an exacting standard of exceptional finish.
           </p>
           <div class="button-row">
-            <button class="button button-dark" type="button">View Projects <span aria-hidden="true">-></span></button>
-            <button class="button button-light" type="button">Book a Consultation <span aria-hidden="true">-></span></button>
+            <a class="button button-dark" href="projects.html">View Projects <span aria-hidden="true">-></span></a>
+            <a class="button button-light" href="about.html">Learn More <span aria-hidden="true">-></span></a>
           </div>
         </div>
         <div class="hero-media" aria-hidden="true">
           <img src="assets/images/hero-transparent.png" alt="">
         </div>
+        <button class="scroll-cue" type="button" aria-label="Scroll to next section">
+          <span aria-hidden="true">↓</span>
+        </button>
       </section>
 
       <section class="intro section-pad" aria-labelledby="approach-title">
         <p class="section-label">Our Approach</p>
         <h2 id="approach-title">Built on trust.<br>Delivered with precision.</h2>
         <p>
-          At Seacon Ltd, we combine craftsmanship, technical expertise and seamless
+          At Seacon, we combine craftsmanship, technical expertise and seamless
           project management to deliver outstanding results. Every detail is carefully
           considered, every promise delivered.
         </p>
@@ -74,7 +91,7 @@
           <article>
             <div class="service-icon" aria-hidden="true">□</div>
             <h3>Construction</h3>
-            <p>Bespoke new builds delivered to the highest standard.</p>
+            <p>Bespoke builds delivered to the highest standard.</p>
           </article>
           <article>
             <div class="service-icon" aria-hidden="true">⌂</div>
@@ -82,7 +99,7 @@
             <p>Sensitive restoration and seamless transformation.</p>
           </article>
           <article>
-            <div class="service-icon" aria-hidden="true">♡</div>
+            <div class="service-icon" aria-hidden="true">○</div>
             <h3>Aftercare</h3>
             <p>Ongoing support to protect and enhance your investment.</p>
           </article>
@@ -90,42 +107,78 @@
       </section>
 
       <section class="wide-image wide-image-tall" aria-label="Completed exterior project">
-        <img src="assets/images/exterior-pool.avif" alt="Completed luxury residence with pool and landscaped garden">
+        <img src="assets/images/project-facade.avif" alt="Completed luxury residence interior">
       </section>
 
       <section class="projects section-pad" aria-labelledby="projects-title">
         <div class="section-heading">
           <h2 id="projects-title">Featured Projects</h2>
-          <button class="button button-light" type="button">More Projects</button>
+          <a class="button button-light" href="projects.html">More Projects</a>
         </div>
         <div class="project-grid">
           <article class="project-card">
-            <img src="assets/images/project-townhouse.avif" alt="Avenue Road exterior">
-            <div>
-              <h3>Avenue Road</h3>
-              <p>London</p>
-            </div>
+            <a href="project-html/belgravia.html" aria-label="View project: Belgravia">
+              <div class="project-image">
+                <img src="projects/belgravia/hero-image.avif" alt="Belgravia project">
+              </div>
+              <h3>Belgravia</h3>
+            </a>
           </article>
           <article class="project-card">
-            <img src="assets/images/project-detail.avif" alt="Woodsmore Road interior detail">
-            <div>
-              <h3>Woodsmore Road NW5</h3>
-              <p>London</p>
-            </div>
+            <a href="project-html/chelsea.html" aria-label="View project: Chelsea">
+              <div class="project-image">
+                <img src="projects/chelsea/hero-image.avif" alt="Chelsea project">
+              </div>
+              <h3>Chelsea</h3>
+            </a>
           </article>
           <article class="project-card">
-            <img src="assets/images/project-country.avif" alt="Cotswold Manor House landscape">
-            <div>
-              <h3>Cotswold Manor House</h3>
-              <p>Country</p>
-            </div>
+            <a href="project-html/holland-park.html" aria-label="View project: Holland Park">
+              <div class="project-image">
+                <img src="projects/holland-park/hero-image.avif" alt="Holland Park project">
+              </div>
+              <h3>Holland Park</h3>
+            </a>
           </article>
           <article class="project-card">
-            <img src="assets/images/project-facade.avif" alt="Warwick Avenue exterior facade">
-            <div>
-              <h3>Warwick Avenue</h3>
-              <p>London</p>
-            </div>
+            <a href="project-html/kensington.html" aria-label="View project: Kensington">
+              <div class="project-image">
+                <img src="projects/kensington/hero-image.avif" alt="Kensington project">
+              </div>
+              <h3>Kensington</h3>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="project-html/marylebone.html" aria-label="View project: Marylebone">
+              <div class="project-image">
+                <img src="projects/marylebone/hero-image.avif" alt="Marylebone project">
+              </div>
+              <h3>Marylebone</h3>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="project-html/notting-hill.html" aria-label="View project: Notting Hill">
+              <div class="project-image">
+                <img src="projects/notting-hill/hero-image.avif" alt="Notting Hill project">
+              </div>
+              <h3>Notting Hill</h3>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="project-html/riverside.html" aria-label="View project: Riverside">
+              <div class="project-image">
+                <img src="projects/riverside/hero-image.avif" alt="Riverside project">
+              </div>
+              <h3>Riverside</h3>
+            </a>
+          </article>
+          <article class="project-card">
+            <a href="project-html/wimbledon.html" aria-label="View project: Wimbledon">
+              <div class="project-image">
+                <img src="projects/wimbledon/hero-image.avif" alt="Wimbledon project">
+              </div>
+              <h3>Wimbledon</h3>
+            </a>
           </article>
         </div>
         <div class="project-controls" aria-label="Project carousel controls">
@@ -139,18 +192,20 @@
           <h2 id="cta-title">Let's build something exceptional.</h2>
           <p>Start your project with a team that cares about every detail.</p>
         </div>
-        <button class="button button-dark" type="button">Book a Consultation <span aria-hidden="true">-></span></button>
+        <a class="button button-dark" href="contact.html">Make an Enquiry <span aria-hidden="true">-></span></a>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-main">
-        <img src="assets/logo/seacon-logo.png" alt="Seacon Ltd">
+        <a class="footer-logo" href="index.html" aria-label="Back to top of Seacon Ltd home">
+          <img src="assets/logo/seacon-logo-white.png" alt="Seacon Ltd">
+        </a>
         <nav aria-label="Footer navigation">
-          <a href="#">Projects</a>
-          <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="contact.html">Contact</a>
         </nav>
         <address>
           <a href="tel:02012345678">020 1234 5678</a>
