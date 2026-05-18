@@ -1919,7 +1919,7 @@ h3 {
   }
 
   .about-hero .scroll-cue {
-    position: fixed;
+    position: absolute;
     bottom: 28px;
     z-index: 30;
   }
