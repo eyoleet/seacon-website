@@ -2024,15 +2024,23 @@ main > section:not(.hero).section-visible {
 
   .contact-hero .contact-content {
     justify-content: center;
-    min-height: 100svh;
-    min-height: 100dvh;
-    padding-top: 108px;
-    padding-bottom: 42px;
+    width: min(calc(100% - 44px), 520px);
+    min-height: auto;
+    margin: auto;
+    padding: 34px 24px;
+    border: 1px solid rgba(217, 209, 196, 0.72);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 18px 60px rgba(36, 31, 24, 0.12);
+  }
+
+  .contact-hero::before {
+    background: rgba(247, 243, 236, 0.12);
   }
 
   .contact-hero .contact-content .section-label,
   .contact-hero .contact-content .rule,
-  .contact-hero .contact-content .contact-intro {
+  .contact-hero .contact-content .contact-intro,
+  .contact-hero .contact-content p:not(.eyebrow) {
     display: block;
   }
 
@@ -2040,8 +2048,29 @@ main > section:not(.hero).section-visible {
     display: grid;
   }
 
+  .contact-hero .contact-content .section-label {
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+
+  .contact-hero .contact-content .rule {
+    margin-bottom: 20px;
+  }
+
   .contact-intro {
     max-width: min(100%, 430px);
+    margin-bottom: 26px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .contact-address-title {
+    margin-top: 20px;
+  }
+
+  .contact-details {
+    gap: 4px;
+    font-size: 14px;
   }
 
   .hero-copy p:not(.eyebrow) {
