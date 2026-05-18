@@ -1815,6 +1815,14 @@ h3 {
   .footer-main address {
     justify-content: center;
   }
+
+  .hero,
+  .about-hero,
+  .delivery-hero,
+  .contact-hero,
+  .project-detail-hero {
+    min-height: 100svh;
+  }
 }
 
 @media (max-width: 720px) {
@@ -2120,6 +2128,19 @@ h3 {
     transform: none;
     -webkit-mask-image: none;
     mask-image: none;
+  }
+
+  .hero,
+  .about-hero,
+  .delivery-hero,
+  .contact-hero,
+  .project-detail-hero {
+    height: 100svh;
+    min-height: 100svh;
+  }
+
+  .hero-copy {
+    min-height: 100svh;
   }
 
   .service-grid {
