@@ -9,8 +9,8 @@
   --green: #315f3a;
   --lime: #a8c83f;
   --shadow: 0 24px 80px rgba(36, 31, 24, 0.12);
-  --serif: Georgia, "Times New Roman", serif;
-  --sans: "Gotham", Arial, Helvetica, sans-serif;
+  --serif: "Gotham", "Montserrat", Georgia, "Times New Roman", serif;
+  --sans: "Gotham", "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -1599,6 +1599,13 @@ main > section:not(.hero).section-visible {
 .cta p {
   margin: 0;
   color: #3f423c;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sans);
+  font-weight: 500;
 }
 
 .site-footer {
